@@ -3,6 +3,7 @@ import static java.lang.Integer.parseInt;
 public class Main {
     public static void main(String[] args) {
         BoxString text = new BoxString("");
+        text.box(5);
         text.add(new BoxString("First"));
         text.add(new BoxString("Second"));
         text.add(new BoxString("Third"));
@@ -13,6 +14,7 @@ public class Main {
         String saveString = String.valueOf(boxString);
         System.out.println("Объект из коробки строк: " + saveString);
         BoxNumber numbers = new BoxNumber(0);
+        numbers.box(5);
         numbers.add(new BoxNumber(1));
         numbers.add(new BoxNumber(2));
         numbers.add(new BoxNumber(3));
